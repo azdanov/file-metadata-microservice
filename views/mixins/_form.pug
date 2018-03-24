@@ -1,0 +1,10 @@
+mixin form()
+  form(action="/size", method="post", enctype="multipart/form-data")
+    input(type="hidden", name="_csrf", value=csrfToken)
+    label.label(for="file") File
+    .field.has-addons
+      .control
+        input.input(type="file", id="file", name="file", required)
+        p.help.has-text-dark Limit 5 MB
+      .control
+        input.button.is-link(type="submit")

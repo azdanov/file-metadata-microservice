@@ -1,0 +1,11 @@
+include layout
+
+include mixins/_header
+include mixins/_stats
+
+block content
+  +header('File Metadata Microservice', 'Error.')
+    p.has-text-danger= message
+    a(href="/") Back
+    pre= JSON.stringify(error)
+

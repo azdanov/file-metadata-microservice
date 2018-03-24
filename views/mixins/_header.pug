@@ -1,0 +1,10 @@
+mixin header(title, subtitle)
+  section.section
+    .container.columns.is-mobile.is-centered
+      .column.is-narrow.is-10-mobile
+        h1.title= title
+        p.subtitle= subtitle
+        if block
+          block
+        else
+          a(href="/") Back
