@@ -10,4 +10,3 @@ export const index = (req: Request, res: Response) => {
     csrfToken: req.csrfToken(),
   });
 };
-
